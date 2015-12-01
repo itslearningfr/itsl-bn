@@ -96,9 +96,9 @@ if ( ! function_exists( 'catchbase_setup' ) ) :
 		 * Make theme available for translation
 		 * Translations can be filed in the /languages/ directory
 		 * If you're building a theme based on catchbase, use a find and replace
-		 * to change 'catchbase' to the name of your theme in all the template files
+		 * to change 'itslcatchbase' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'catchbase', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'itslcatchbase', get_template_directory() . '/languages' );
 
 		/**
 		 * Add default posts and comments RSS feed links to head
@@ -124,8 +124,8 @@ if ( ! function_exists( 'catchbase_setup' ) ) :
 		 * This theme uses wp_nav_menu() in one location.
 		 */
 		register_nav_menus( array(
-			'primary' 	=> __( 'Primary Menu', 'catchbase' ),
-			'secondary' => __( 'Secondary Menu', 'catchbase' ),
+			'primary' 	=> __( 'Primary Menu', 'itslcatchbase' ),
+			'secondary' => __( 'Secondary Menu', 'itslcatchbase' ),
 		) );
 
 		/**
@@ -602,7 +602,7 @@ if ( ! function_exists( 'catchbase_content_nav' ) ) :
 
 		?>
 	        <nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>">
-	        	<h3 class="screen-reader-text"><?php _e( 'Post navigation', 'catchbase' ); ?></h3>
+	        	<h3 class="screen-reader-text"><?php _e( 'Post navigation', 'itslcatchbase' ); ?></h3>
 				<?php
 				/**
 				 * Check if navigation type is numeric and if Wp-PageNavi Plugin is enabled
@@ -611,8 +611,8 @@ if ( ! function_exists( 'catchbase_content_nav' ) ) :
 					wp_pagenavi();
 	            }
 	            else { ?>	
-	                <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'catchbase' ) ); ?></div>
-	                <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'catchbase' ) ); ?></div>
+	                <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'itslcatchbase' ) ); ?></div>
+	                <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'itslcatchbase' ) ); ?></div>
 	            <?php 
 	            } ?>
 	        </nav><!-- #nav -->	
@@ -636,7 +636,7 @@ if ( ! function_exists( 'catchbase_comment' ) ) :
 
 		<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 			<div class="comment-body">
-				<?php _e( 'Pingback:', 'catchbase' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'catchbase' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php _e( 'Pingback:', 'itslcatchbase' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'itslcatchbase' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>
 
 		<?php else : ?>
@@ -646,20 +646,20 @@ if ( ! function_exists( 'catchbase_comment' ) ) :
 				<footer class="comment-meta">
 					<div class="comment-author vcard">
 						<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-						<?php printf( __( '%s <span class="says">says:</span>', 'catchbase' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+						<?php printf( __( '%s <span class="says">says:</span>', 'itslcatchbase' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 					</div><!-- .comment-author -->
 
 					<div class="comment-metadata">
 						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 							<time datetime="<?php comment_time( 'c' ); ?>">
-								<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'catchbase' ), get_comment_date(), get_comment_time() ); ?>
+								<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'itslcatchbase' ), get_comment_date(), get_comment_time() ); ?>
 							</time>
 						</a>
-						<?php edit_comment_link( __( 'Edit', 'catchbase' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php edit_comment_link( __( 'Edit', 'itslcatchbase' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .comment-metadata -->
 
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'catchbase' ); ?></p>
+					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'itslcatchbase' ); ?></p>
 					<?php endif; ?>
 				</footer><!-- .comment-meta -->
 
@@ -762,14 +762,14 @@ if ( ! function_exists( 'catchbase_entry_meta' ) ) :
 		);
 
 		printf( '<span class="posted-on">%1$s<a href="%2$s" rel="bookmark">%3$s</a></span>',
-			sprintf( _x( '<span class="screen-reader-text">Posted on</span>', 'Used before publish date.', 'catchbase' ) ),
+			sprintf( _x( '<span class="screen-reader-text">Posted on</span>', 'Used before publish date.', 'itslcatchbase' ) ),
 			esc_url( get_permalink() ),
 			$time_string
 		);
 
 		if ( is_singular() || is_multi_author() ) {
 			printf( '<span class="byline"><span class="author vcard">%1$s<a class="url fn n" href="%2$s">%3$s</a></span></span>',
-				sprintf( _x( '<span class="screen-reader-text">Author</span>', 'Used before post author name.', 'catchbase' ) ),
+				sprintf( _x( '<span class="screen-reader-text">Author</span>', 'Used before post author name.', 'itslcatchbase' ) ),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_html( get_the_author() )
 			);
@@ -777,11 +777,11 @@ if ( ! function_exists( 'catchbase_entry_meta' ) ) :
 
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
 			echo '<span class="comments-link">';
-			comments_popup_link( esc_html__( 'Leave a comment', 'catchbase' ), esc_html__( '1 Comment', 'catchbase' ), esc_html__( '% Comments', 'catchbase' ) );
+			comments_popup_link( esc_html__( 'Leave a comment', 'itslcatchbase' ), esc_html__( '1 Comment', 'itslcatchbase' ), esc_html__( '% Comments', 'itslcatchbase' ) );
 			echo '</span>';
 		}
 
-		edit_post_link( esc_html__( 'Edit', 'catchbase' ), '<span class="edit-link">', '</span>' ); 
+		edit_post_link( esc_html__( 'Edit', 'itslcatchbase' ), '<span class="edit-link">', '</span>' ); 
 
 		echo '</p><!-- .entry-meta -->';
 	}
@@ -798,18 +798,18 @@ if ( ! function_exists( 'catchbase_tag_category' ) ) :
 		echo '<p class="entry-meta">';
 
 		if ( 'post' == get_post_type() ) {
-			$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'catchbase' ) );
+			$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'itslcatchbase' ) );
 			if ( $categories_list && catchbase_categorized_blog() ) {
 				printf( '<span class="cat-links">%1$s%2$s</span>',
-					sprintf( _x( '<span class="screen-reader-text">Categories</span>', 'Used before category names.', 'catchbase' ) ),
+					sprintf( _x( '<span class="screen-reader-text">Categories</span>', 'Used before category names.', 'itslcatchbase' ) ),
 					$categories_list
 				);
 			}
 
-			$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'catchbase' ) );
+			$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'itslcatchbase' ) );
 			if ( $tags_list ) {
 				printf( '<span class="tags-links">%1$s%2$s</span>',
-					sprintf( _x( '<span class="screen-reader-text">Tags</span>', 'Used before tag names.', 'catchbase' ) ),
+					sprintf( _x( '<span class="screen-reader-text">Tags</span>', 'Used before tag names.', 'itslcatchbase' ) ),
 					$tags_list
 				);
 			}
@@ -1003,7 +1003,7 @@ if ( ! function_exists( 'catchbase_continue_reading' ) ) :
 		$options		=	catchbase_get_theme_options();
 		$more_tag_text	= $options['excerpt_more_text'];
 
-		return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' .  sprintf( __( '%s', 'catchbase' ) , $more_tag_text ) . '</a>';
+		return ' <a class="more-link" href="'. esc_url( get_permalink() ) . '">' .  sprintf( __( '%s', 'itslcatchbase' ) , $more_tag_text ) . '</a>';
 	}
 endif; //catchbase_continue_reading
 add_filter( 'excerpt_more', 'catchbase_continue_reading' );
@@ -1452,7 +1452,8 @@ function catchbase_top() {
 
     echo $catchbase_top;
 }
-add_action( 'catchbase_header', 'catchbase_top', 15 );
+add_action( 'catchbase_header', 'catchbase_top', 04 );
+
 
 
 /**
@@ -1465,14 +1466,14 @@ add_action( 'catchbase_header', 'catchbase_top', 15 );
  * @since Catch Base 1.0
  */
 function catchbase_partners() {
-	//catchbase_flush_transients();
+	catchbase_flush_transients();
 	if ( ( !$catchbase_partners = get_transient( 'catchbase_partners' ) ) ) {
 		echo '<!-- refreshing cache -->';
 		
 		$catchbase_content = catchbase_get_content();
 
 		$catchbase_partners =  $catchbase_content['partners']; 
-    	set_transient( 'catchbase_partners', $catchbase_partners, 86940 );
+    	//set_transient( 'catchbase_partners', $catchbase_partners, 86940 );
     }
 
     echo $catchbase_partners;
@@ -1558,7 +1559,7 @@ if ( ! function_exists( 'catchbase_scrollup' ) ) {
 			$options = catchbase_get_theme_options();
 			echo '<!-- refreshing cache -->';	
 			
-			$catchbase_scrollup =  '<a href="#masthead" id="scrollup" class="genericon"><span class="screen-reader-text">' . __( 'Scroll Up', 'catchbase' ) . '</span></a>' ;
+			$catchbase_scrollup =  '<a href="#masthead" id="scrollup" class="genericon"><span class="screen-reader-text">' . __( 'Scroll Up', 'itslcatchbase' ) . '</span></a>' ;
 			
 			set_transient( 'catchbase_scrollup', $catchbase_scrollup, 86940 );
 		}
@@ -1575,8 +1576,8 @@ if ( ! function_exists( 'catchbase_page_post_meta' ) ) :
 	function catchbase_page_post_meta() {
 		$catchbase_author_url = esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) );
 		
-		$catchbase_page_post_meta = '<span class="post-time">' . __( 'Posted on', 'catchbase' ) . ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( 'c' ) ) . '" pubdate>' . esc_html( get_the_date() ) . '</time></span>';
-	    $catchbase_page_post_meta .= '<span class="post-author">' . __( 'By', 'catchbase' ) . ' <span class="author vcard"><a class="url fn n" href="' . $catchbase_author_url . '" title="View all posts by ' . get_the_author() . '" rel="author">' .get_the_author() . '</a></span>';
+		$catchbase_page_post_meta = '<span class="post-time">' . __( 'Posted on', 'itslcatchbase' ) . ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( 'c' ) ) . '" pubdate>' . esc_html( get_the_date() ) . '</time></span>';
+	    $catchbase_page_post_meta .= '<span class="post-author">' . __( 'By', 'itslcatchbase' ) . ' <span class="author vcard"><a class="url fn n" href="' . $catchbase_author_url . '" title="View all posts by ' . get_the_author() . '" rel="author">' .get_the_author() . '</a></span>';
 
 		return $catchbase_page_post_meta;
 	} 

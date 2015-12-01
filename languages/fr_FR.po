@@ -159,7 +159,7 @@ msgstr "Editer"
 
 #: ../inc/catchbase-breadcrumb.php:57
 msgid "Home"
-msgstr "Maison"
+msgstr "Accueil"
 
 #: ../inc/catchbase-breadcrumb.php:58
 #, php-format

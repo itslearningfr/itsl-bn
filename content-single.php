@@ -28,7 +28,7 @@
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'catchbase' ) . '</span>',
+					'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'itslcatchbase' ) . '</span>',
 					'after'  => '</div>',
 					'link_before' 	=> '<span>',
                     'link_after'   	=> '</span>',

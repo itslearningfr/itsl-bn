@@ -54,12 +54,12 @@ if( !function_exists( 'catchbase_custom_breadcrumbs' ) ) :
 	function catchbase_custom_breadcrumbs( $showOnHome, $delimiter ) {
 
 		/* === OPTIONS === */
-		$text['home']     = __( 'Home', 'catchbase' ); // text for the 'Home' link
-		$text['category'] = __( 'Archive for %s', 'catchbase' ); // text for a category page
-		$text['search']   = __( 'Search results for: %s', 'catchbase' ); // text for a search results page
-		$text['tag']      = __( 'Posts tagged %s', 'catchbase' ); // text for a tag page
-		$text['author']   = __( 'View all posts by %s', 'catchbase' ); // text for an author page
-		$text['404']      = __( 'Error 404', 'catchbase' ); // text for the 404 page
+		$text['home']     = __( 'Home', 'itslcatchbase' ); // text for the 'Home' link
+		$text['category'] = __( 'Archive for %s', 'itslcatchbase' ); // text for a category page
+		$text['search']   = __( 'Search results for: %s', 'itslcatchbase' ); // text for a search results page
+		$text['tag']      = __( 'Posts tagged %s', 'itslcatchbase' ); // text for a tag page
+		$text['author']   = __( 'View all posts by %s', 'itslcatchbase' ); // text for an author page
+		$text['404']      = __( 'Error 404', 'itslcatchbase' ); // text for the 404 page
 
 		$showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
 		$before      = '<span class="breadcrumb-current">'; // tag before the current crumb
@@ -219,7 +219,7 @@ if( !function_exists( 'catchbase_custom_breadcrumbs' ) ) :
 				if( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
 					echo ' (';
 				}
-				echo sprintf( __( 'Page %s', 'catchbase' ), max( $paged, $page ) );
+				echo sprintf( __( 'Page %s', 'itslcatchbase' ), max( $paged, $page ) );
 				if( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
 					echo ')';
 				}

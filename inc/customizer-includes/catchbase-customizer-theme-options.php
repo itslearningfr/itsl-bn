@@ -18,18 +18,18 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	//Theme Options
 	if( 4 <= get_bloginfo( 'version' ) ) {
 		$wp_customize->add_panel( 'catchbase_theme_options', array(
-		    'description'    => __( 'Basic theme Options', 'catchbase' ),
+		    'description'    => __( 'Basic theme Options', 'itslcatchbase' ),
 		    'capability'     => 'edit_theme_options',
 		    'priority'       => 200,
-		    'title'    		 => __( 'Theme Options', 'catchbase' ),
+		    'title'    		 => __( 'Theme Options', 'itslcatchbase' ),
 		) );
 	}
 
 	// Breadcrumb Option
 	$wp_customize->add_section( 'catchbase_breadcumb_options', array(
-		'description'	=> __( 'Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site.', 'catchbase' ),
+		'description'	=> __( 'Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site.', 'itslcatchbase' ),
 		'panel'			=> 'catchbase_theme_options',
-		'title'    		=> __( 'Breadcrumb Options', 'catchbase' ),
+		'title'    		=> __( 'Breadcrumb Options', 'itslcatchbase' ),
 		'priority' 		=> 201,
 	) );
 
@@ -40,7 +40,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_breadcumb_options', array(
-		'label'    => __( 'Check to enable Breadcrumb', 'catchbase' ),
+		'label'    => __( 'Check to enable Breadcrumb', 'itslcatchbase' ),
 		'section'  => 'catchbase_breadcumb_options',
 		'settings' => 'catchbase_theme_options[breadcumb_option]',
 		'type'     => 'checkbox',
@@ -53,7 +53,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_breadcumb_onhomepage', array(
-		'label'    => __( 'Check to enable Breadcrumb on Homepage', 'catchbase' ),
+		'label'    => __( 'Check to enable Breadcrumb on Homepage', 'itslcatchbase' ),
 		'section'  => 'catchbase_breadcumb_options',
 		'settings' => 'catchbase_theme_options[breadcumb_onhomepage]',
 		'type'     => 'checkbox',
@@ -69,7 +69,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 			'input_attrs' => array(
 	            'style' => 'width: 40px;'
             	),
-            'label'    	=> __( 'Seperator between Breadcrumbs', 'catchbase' ),
+            'label'    	=> __( 'Seperator between Breadcrumbs', 'itslcatchbase' ),
 			'section' 	=> 'catchbase_breadcumb_options',
 			'settings' 	=> 'catchbase_theme_options[breadcumb_seperator]',
 			'type'     	=> 'text'
@@ -80,10 +80,10 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
    	// Custom CSS Option
 	$wp_customize->add_section( 'catchbase_custom_css', array(
-		'description'	=> __( 'Custom/Inline CSS', 'catchbase'),
+		'description'	=> __( 'Custom/Inline CSS', 'itslcatchbase'),
 		'panel'  		=> 'catchbase_theme_options',
 		'priority' 		=> 203,
-		'title'    		=> __( 'Custom CSS Options', 'catchbase' ),
+		'title'    		=> __( 'Custom CSS Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[custom_css]', array(
@@ -94,7 +94,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 
 	$wp_customize->add_control( new Catchbase_Customize_Textarea_Control ( $wp_customize, 'catchbase_theme_options[custom_css]', array(
-			'label'		=> __( 'Enter Custom CSS', 'catchbase' ),
+			'label'		=> __( 'Enter Custom CSS', 'itslcatchbase' ),
 	        'priority'	=> 1,
 			'section'   => 'catchbase_custom_css',
 	        'settings'  => 'catchbase_theme_options[custom_css]',
@@ -106,7 +106,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	$wp_customize->add_section( 'catchbase_excerpt_options', array(
 		'panel'  	=> 'catchbase_theme_options',
 		'priority' 	=> 204,
-		'title'    	=> __( 'Excerpt Options', 'catchbase' ),
+		'title'    	=> __( 'Excerpt Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[excerpt_length]', array(
@@ -116,14 +116,14 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_excerpt_length', array(
-		'description' => __('Excerpt length. Default is 40 words', 'catchbase'),
+		'description' => __('Excerpt length. Default is 40 words', 'itslcatchbase'),
 		'input_attrs' => array(
             'min'   => 10,
             'max'   => 200,
             'step'  => 5,
             'style' => 'width: 60px;'
             ),
-        'label'    => __( 'Excerpt Length (words)', 'catchbase' ),
+        'label'    => __( 'Excerpt Length (words)', 'itslcatchbase' ),
 		'section'  => 'catchbase_excerpt_options',
 		'settings' => 'catchbase_theme_options[excerpt_length]',
 		'type'	   => 'number',
@@ -137,7 +137,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_excerpt_more_text', array(
-		'label'    => __( 'Read More Text', 'catchbase' ),
+		'label'    => __( 'Read More Text', 'itslcatchbase' ),
 		'section'  => 'catchbase_excerpt_options',
 		'settings' => 'catchbase_theme_options[excerpt_more_text]',
 		'type'	   => 'text',
@@ -146,10 +146,10 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	//Homepage / Frontpage Options
 	$wp_customize->add_section( 'catchbase_homepage_options', array(
-		'description'	=> __( 'Only posts that belong to the categories selected here will be displayed on the front page', 'catchbase' ),
+		'description'	=> __( 'Only posts that belong to the categories selected here will be displayed on the front page', 'itslcatchbase' ),
 		'panel'			=> 'catchbase_theme_options',
 		'priority' 		=> 209,
-		'title'   	 	=> __( 'Homepage / Frontpage Options', 'catchbase' ),
+		'title'   	 	=> __( 'Homepage / Frontpage Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[front_page_category]', array(
@@ -159,7 +159,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchbase_Customize_Dropdown_Categories_Control( $wp_customize, 'catchbase_theme_options[front_page_category]', array(
-        'label'   	=> __( 'Select Categories', 'catchbase' ),
+        'label'   	=> __( 'Select Categories', 'itslcatchbase' ),
         'name'	 	=> 'catchbase_theme_options[front_page_category]',
 		'priority'	=> '6',
         'section'  	=> 'catchbase_homepage_options',
@@ -171,10 +171,10 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 /***	
 	// Icon Options
 	$wp_customize->add_section( 'catchbase_icons', array(
-		'description'	=> __( 'Remove Icon images to disable.', 'catchbase'),
+		'description'	=> __( 'Remove Icon images to disable.', 'itslcatchbase'),
 		'panel'  => 'catchbase_theme_options',
 		'priority' 		=> 210,
-		'title'    		=> __( 'Icon Options', 'catchbase' ),
+		'title'    		=> __( 'Icon Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[favicon]', array(
@@ -183,7 +183,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'catchbase_theme_options[favicon]', array(
-		'label'		=> __( 'Select/Add Favicon', 'catchbase' ),
+		'label'		=> __( 'Select/Add Favicon', 'itslcatchbase' ),
 		'section'    => 'catchbase_icons',
         'settings'   => 'catchbase_theme_options[favicon]',
 	) ) );
@@ -194,8 +194,8 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'catchbase_theme_options[web_clip]', array(
-		'description'	=> __( 'Web Clip Icon for Apple devices. Recommended Size - Width 144px and Height 144px height, which will support High Resolution Devices like iPad Retina.', 'catchbase'),
-		'label'		 	=> __( 'Select/Add Web Clip Icon', 'catchbase' ),
+		'description'	=> __( 'Web Clip Icon for Apple devices. Recommended Size - Width 144px and Height 144px height, which will support High Resolution Devices like iPad Retina.', 'itslcatchbase'),
+		'label'		 	=> __( 'Select/Add Web Clip Icon', 'itslcatchbase' ),
 		'section'    	=> 'catchbase_icons',
         'settings'   	=> 'catchbase_theme_options[web_clip]',
 	) ) );
@@ -207,7 +207,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 		'capability'=> 'edit_theme_options',
 		'panel'		=> 'catchbase_theme_options',
 		'priority'	=> 211,
-		'title'		=> __( 'Layout Options', 'catchbase' ),
+		'title'		=> __( 'Layout Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[theme_layout]', array(
@@ -224,7 +224,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchbase_theme_options[theme_layout]', array(
 		'choices'	=> $choices,
-		'label'		=> __( 'Default Layout', 'catchbase' ),
+		'label'		=> __( 'Default Layout', 'itslcatchbase' ),
 		'section'	=> 'catchbase_layout',
 		'settings'   => 'catchbase_theme_options[theme_layout]',
 		'type'		=> 'select',
@@ -244,7 +244,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchbase_theme_options[content_layout]', array(
 		'choices'   => $choices,
-		'label'		=> __( 'Archive Content Layout', 'catchbase' ),
+		'label'		=> __( 'Archive Content Layout', 'itslcatchbase' ),
 		'section'   => 'catchbase_layout',
 		'settings'  => 'catchbase_theme_options[content_layout]',
 		'type'      => 'select',
@@ -264,7 +264,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	}
 
 	$wp_customize->add_control( 'catchbase_theme_options[single_post_image_layout]', array(
-			'label'		=> __( 'Single Page/Post Image Layout ', 'catchbase' ),
+			'label'		=> __( 'Single Page/Post Image Layout ', 'itslcatchbase' ),
 			'section'   => 'catchbase_layout',
 	        'settings'  => 'catchbase_theme_options[single_post_image_layout]',
 	        'type'	  	=> 'select',
@@ -276,12 +276,12 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	// Pagination Options
 	$pagination_type	= $options['pagination_type'];
 
-	$catchbase_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.<br/>Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catchbase' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
+	$catchbase_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.<br/>Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'itslcatchbase' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
 	
 	//Check if navigation type is Jetpack Infinite Scroll and if it is enabled
 	if ( ( 'infinite-scroll-click' == $pagination_type || 'infinite-scroll-scroll' == $pagination_type ) ) {
 		if ( ! (class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) ) ) {
-			$catchbase_navigation_description = sprintf( __( 'Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'catchbase' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
+			$catchbase_navigation_description = sprintf( __( 'Infinite Scroll Options requires <a target="_blank" href="%s">JetPack Plugin</a> with Infinite Scroll module Enabled.', 'itslcatchbase' ), esc_url( 'https://wordpress.org/plugins/jetpack/' ) );
 		}
 		else {
 			$catchbase_navigation_description = '';
@@ -290,7 +290,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	//Check if navigation type is numeric and if Wp-PageNavi Plugin is enabled
 	else if ( 'numeric' == $pagination_type ) {
 		if ( !function_exists( 'wp_pagenavi' ) ) {
-			$catchbase_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.', 'catchbase' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ) );
+			$catchbase_navigation_description = sprintf( __( 'Numeric Option requires <a target="_blank" href="%s">WP-PageNavi Plugin</a>.', 'itslcatchbase' ), esc_url( 'https://wordpress.org/plugins/wp-pagenavi' ) );
 		}
 		else {
 			$catchbase_navigation_description = '';
@@ -301,7 +301,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 		'description'	=> $catchbase_navigation_description,
 		'panel'  		=> 'catchbase_theme_options',
 		'priority'		=> 212,
-		'title'    		=> __( 'Pagination Options', 'catchbase' ),
+		'title'    		=> __( 'Pagination Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[pagination_type]', array(
@@ -318,7 +318,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchbase_pagination_options', array(
 		'choices'  => $choices,
-		'label'    => __( 'Pagination type', 'catchbase' ),
+		'label'    => __( 'Pagination type', 'itslcatchbase' ),
 		'section'  => 'catchbase_pagination_options',
 		'settings' => 'catchbase_theme_options[pagination_type]',
 		'type'	   => 'select',
@@ -328,10 +328,10 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	//Promotion Headline Options
     $wp_customize->add_section( 'catchbase_promotion_headline_options', array(
-		'description'	=> __( 'To disable the fields, simply leave them empty.', 'catchbase' ),
+		'description'	=> __( 'To disable the fields, simply leave them empty.', 'itslcatchbase' ),
 		'panel'			=> 'catchbase_theme_options',
 		'priority' 		=> 213,
-		'title'   	 	=> __( 'Promotion Headline Options', 'catchbase' ),
+		'title'   	 	=> __( 'Promotion Headline Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[promotion_headline_option]', array(
@@ -348,7 +348,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	$wp_customize->add_control( 'catchbase_theme_options[promotion_headline_option]', array(
 		'choices'  	=> $choices,
-		'label'    	=> __( 'Enable Promotion Headline on', 'catchbase' ),
+		'label'    	=> __( 'Enable Promotion Headline on', 'itslcatchbase' ),
 		'priority'	=> '0.5',
 		'section'  	=> 'catchbase_promotion_headline_options',
 		'settings' 	=> 'catchbase_theme_options[promotion_headline_option]',
@@ -362,8 +362,8 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchbase_Customize_Textarea_Control( $wp_customize, 'catchbase_theme_options[promotion_headline]', array(
-		'description'	=> __( 'Appropriate Words: 10', 'catchbase' ),
-		'label'    	=> __( 'Promotion Headline Text', 'catchbase' ),
+		'description'	=> __( 'Appropriate Words: 10', 'itslcatchbase' ),
+		'label'    	=> __( 'Promotion Headline Text', 'itslcatchbase' ),
 		'priority'	=> '1',
 		'section' 	=> 'catchbase_promotion_headline_options',
 		'settings'	=> 'catchbase_theme_options[promotion_headline]',
@@ -376,8 +376,8 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( new Catchbase_Customize_Textarea_Control( $wp_customize, 'catchbase_theme_options[promotion_subheadline]', array(
-		'description'	=> __( 'Appropriate Words: 15', 'catchbase' ),
-		'label'    	=> __( 'Promotion Subheadline Text', 'catchbase' ),
+		'description'	=> __( 'Appropriate Words: 15', 'itslcatchbase' ),
+		'label'    	=> __( 'Promotion Subheadline Text', 'itslcatchbase' ),
 		'priority'	=> '2',
 		'section' 	=> 'catchbase_promotion_headline_options',
 		'settings'	=> 'catchbase_theme_options[promotion_subheadline]',
@@ -390,8 +390,8 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_theme_options[promotion_headline_button]', array(
-		'description'	=> __( 'Appropriate Words: 3', 'catchbase' ),
-		'label'    	=> __( 'Promotion Headline Button Text ', 'catchbase' ),
+		'description'	=> __( 'Appropriate Words: 3', 'itslcatchbase' ),
+		'label'    	=> __( 'Promotion Headline Button Text ', 'itslcatchbase' ),
 		'priority'	=> '3',
 		'section' 	=> 'catchbase_promotion_headline_options',
 		'settings'	=> 'catchbase_theme_options[promotion_headline_button]',
@@ -405,7 +405,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_theme_options[promotion_headline_url]', array(
-		'label'    	=> __( 'Promotion Headine Link', 'catchbase' ),
+		'label'    	=> __( 'Promotion Headine Link', 'itslcatchbase' ),
 		'priority'	=> '4',
 		'section' 	=> 'catchbase_promotion_headline_options',
 		'settings'	=> 'catchbase_theme_options[promotion_headline_url]',
@@ -419,7 +419,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_theme_options[promotion_headline_target]', array(
-		'label'    	=> __( 'Check to Open Link in New Window/Tab', 'catchbase' ),
+		'label'    	=> __( 'Check to Open Link in New Window/Tab', 'itslcatchbase' ),
 		'priority'	=> '5',
 		'section'  	=> 'catchbase_promotion_headline_options',
 		'settings' 	=> 'catchbase_theme_options[promotion_headline_target]',
@@ -429,10 +429,10 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 
 	// Search Options
 	$wp_customize->add_section( 'catchbase_search_options', array(
-		'description'=> __( 'Change default placeholder text in Search.', 'catchbase'),
+		'description'=> __( 'Change default placeholder text in Search.', 'itslcatchbase'),
 		'panel'  => 'catchbase_theme_options',
 		'priority' => 216,
-		'title'    => __( 'Search Options', 'catchbase' ),
+		'title'    => __( 'Search Options', 'itslcatchbase' ),
 	) );
 
 	$wp_customize->add_setting( 'catchbase_theme_options[search_text]', array(
@@ -442,7 +442,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 	) );
 
 	$wp_customize->add_control( 'catchbase_theme_options[search_text]', array(
-		'label'		=> __( 'Default Display Text in Search', 'catchbase' ),
+		'label'		=> __( 'Default Display Text in Search', 'itslcatchbase' ),
 		'section'   => 'catchbase_search_options',
         'settings'  => 'catchbase_theme_options[search_text]',
 		'type'		=> 'text',

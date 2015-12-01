@@ -37,13 +37,14 @@
 			if ( is_search() || 'full-content' != $options['content_layout'] ) : // Only display Excerpts for Search and if 'full-content' is not selected ?>
 				<div class="entry-summary">
 					<?php the_excerpt(); ?>
+					
 				</div><!-- .entry-summary -->
 			<?php else : ?>			
 				<div class="entry-content">
 					<?php the_content(); ?>
 					<?php
 						wp_link_pages( array(
-							'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'catchbase' ) . '</span>',
+							'before' => '<div class="page-links"><span class="pages">' . __( 'Pages:', 'itslcatchbase' ) . '</span>',
 							'after'  => '</div>',
 							'link_before' 	=> '<span>',
 		                    'link_after'   	=> '</span>',

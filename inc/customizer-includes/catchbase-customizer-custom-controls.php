@@ -54,7 +54,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
 				$dropdown
 			);
 
-			echo '<p class="description">'. __( 'Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.', 'catchbase' ) . '</p>';
+			echo '<p class="description">'. __( 'Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.', 'itslcatchbase' ) . '</p>';
 		}
 	}
 
@@ -67,7 +67,7 @@ if ( ! defined( 'CATCHBASE_THEME_VERSION' ) ) {
             $important_links = array(
 							'support' => array( 
 								'link'	=> esc_url( 'https://itslearningfr.zendesk.com/home' ),
-								'text' 	=> __( 'Support', 'catchbase' ),
+								'text' 	=> __( 'Support', 'itslcatchbase' ),
 								),
 							);
 			foreach ( $important_links as $important_link) {
