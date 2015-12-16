@@ -56,6 +56,7 @@
 }
 
 
+
 /**
  * Individual icons
  */
@@ -89,7 +90,7 @@
 .genericon-dot:before { content: "\f428"; }
 .genericon-downarrow:before { content: "\f502"; }
 .genericon-download:before { content: "\f50b"; }
-.genericon-draggable:before { content: "\f436"; }
+.genericon-draggable:before { content: "\f436"; font: normal 70px/1 'Genericons';}
 .genericon-dribbble:before { content: "\f201"; }
 .genericon-dropbox:before { content: "\f225"; }
 .genericon-dropdown:before { content: "\f433"; }
