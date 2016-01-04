@@ -1466,14 +1466,14 @@ add_action( 'catchbase_header', 'catchbase_top', 04 );
  * @since Catch Base 1.0
  */
 function catchbase_partners() {
-	catchbase_flush_transients();
+	//catchbase_flush_transients();
 	if ( ( !$catchbase_partners = get_transient( 'catchbase_partners' ) ) ) {
 		echo '<!-- refreshing cache -->';
 		
 		$catchbase_content = catchbase_get_content();
 
 		$catchbase_partners =  $catchbase_content['partners']; 
-    	//set_transient( 'catchbase_partners', $catchbase_partners, 86940 );
+    	set_transient( 'catchbase_partners', $catchbase_partners, 86940 );
     }
 
     echo $catchbase_partners;

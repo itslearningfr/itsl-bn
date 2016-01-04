@@ -615,7 +615,11 @@ function catchbase_get_content() {
 
 
 // this is the content at the top left
+<<<<<<< Updated upstream
 	$catchbase_content['top_left'] 	= '<a href="http://www.l-educdenormandie.fr" title="Portail ENT"><img src="'. get_template_directory_uri() . '/images/partenaires/educ.png"></a><a class="genericon_parent genericon genericon-draggable" target="_blank" title="Liste des établissements" href="http://www.l-educdenormandie.fr/les-etablissements/rechercher-un-etablissement/"><span class="screen-reader-text">Liste des établissements</span> </a>';
+=======
+	$catchbase_content['top_left'] 	= '<a href="http://www.l-educdenormandie.fr" title="Portail ENT"><img src="'. get_template_directory_uri() . '/images/partenaires/educ.png"></a><a class="liste-etab" target="_self" title="Liste des établissements" href="http://www.l-educdenormandie.fr/les-etablissements/rechercher-un-etablissement/">Liste des établissements</a>';
+>>>>>>> Stashed changes
 // this is the content at the bottom right
 	// <img src="' . get_template_directory_uri() . '/images/login.jpg" class="wp-post-image" alt="se connecter" title="se connecter">
 	$catchbase_content['top_right']	= '&nbsp;<a class="se-connecter" href="https://leducdenormandie.itslearning.com/elogin/autologin.aspx" title="Se connecter" target="_self">Se connecter</a>';
