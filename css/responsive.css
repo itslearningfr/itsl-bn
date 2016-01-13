@@ -9,7 +9,6 @@ Responsive Style
 
 	#header-left-content {
 		float: left;
-		width: 45%;
 		text-align: left;
 		float: left;
 	
@@ -18,11 +17,7 @@ Responsive Style
 	#header-right-content {
 		float: right;
 		text-align: right;
-<<<<<<< Updated upstream
-		padding-top: 17px;
-=======
 		padding-top: 12px;
->>>>>>> Stashed changes
 	}
 
 
@@ -1030,11 +1025,6 @@ Responsive Style
 	}
 
 	#header-left-content {
-<<<<<<< Updated upstream
-		width: 70%;
-=======
-		width: 60%;
->>>>>>> Stashed changes
 	}
 
 	.se-connecter {
@@ -1050,7 +1040,23 @@ Responsive Style
 
 	.se-connecter:hover {
 		background:url(../images/picto-home-A2.png) no-repeat center center;
-}
+	}
+
+	.liste-etab {
+		width:40px;
+		height:40px;
+		background:url(../images/picto-etabs-small.png) no-repeat center center;
+		float:left;
+		display:block;
+		cursor:pointer;
+		margin-right:22px;
+		font-size: 0px;
+
+	}
+
+	.liste-etab:hover {
+		background:url(../images/picto-etabs-small-over.png) no-repeat center left;
+	}
 
 }
 

@@ -615,14 +615,10 @@ function catchbase_get_content() {
 
 
 // this is the content at the top left
-<<<<<<< Updated upstream
-	$catchbase_content['top_left'] 	= '<a href="http://www.l-educdenormandie.fr" title="Portail ENT"><img src="'. get_template_directory_uri() . '/images/partenaires/educ.png"></a><a class="genericon_parent genericon genericon-draggable" target="_blank" title="Liste des établissements" href="http://www.l-educdenormandie.fr/les-etablissements/rechercher-un-etablissement/"><span class="screen-reader-text">Liste des établissements</span> </a>';
-=======
-	$catchbase_content['top_left'] 	= '<a href="http://www.l-educdenormandie.fr" title="Portail ENT"><img src="'. get_template_directory_uri() . '/images/partenaires/educ.png"></a><a class="liste-etab" target="_self" title="Liste des établissements" href="http://www.l-educdenormandie.fr/les-etablissements/rechercher-un-etablissement/">Liste des établissements</a>';
->>>>>>> Stashed changes
+	$catchbase_content['top_left'] 	= '<a href="http://www.l-educdenormandie.fr" title="Portail ENT"><img src="'. get_template_directory_uri() . '/images/partenaires/educ.png"></a>';
 // this is the content at the bottom right
 	// <img src="' . get_template_directory_uri() . '/images/login.jpg" class="wp-post-image" alt="se connecter" title="se connecter">
-	$catchbase_content['top_right']	= '&nbsp;<a class="se-connecter" href="https://leducdenormandie.itslearning.com/elogin/autologin.aspx" title="Se connecter" target="_self">Se connecter</a>';
+	$catchbase_content['top_right']	= '<a class="liste-etab" href="http://www.l-educdenormandie.fr/les-etablissements/rechercher-un-etablissement/" title="Les établissements" target="_self">Etablissements</a>&nbsp;&nbsp;<a class="se-connecter" href="https://leducdenormandie.itslearning.com/elogin/autologin.aspx" title="Se connecter" target="_self">Se connecter</a>';
 // this is the content at the bottom left
 	$catchbase_content['left'] 	= sprintf( _x( 'Copyright &copy; %1$s . All Rights Reserved.', '1: Year', 'itslcatchbase' ), date( 'Y' ), '' );
 // this is the content at the bottom right

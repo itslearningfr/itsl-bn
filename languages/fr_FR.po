@@ -358,7 +358,7 @@ msgstr "Afficher le contenu complet (pas de description photo)"
 #: ../inc/catchbase-default-options.php:206
 #: ../inc/catchbase-default-options.php:272
 msgid "Homepage / Frontpage"
-msgstr " Page d'accueil / Première page"
+msgstr "Page d'accueil / Première page"
 
 #: ../inc/catchbase-default-options.php:210
 msgid "Excluding Homepage"
@@ -423,7 +423,7 @@ msgstr "Démo curseur vedette "
 
 #: ../inc/catchbase-default-options.php:343
 msgid "Featured Page Slider"
-msgstr "Curseur page vadette"
+msgstr "Curseur page vedette"
 
 #: ../inc/catchbase-default-options.php:360
 msgid "Fade"
@@ -463,7 +463,7 @@ msgstr "Titre aveugle"
 
 #: ../inc/catchbase-default-options.php:396
 msgid "Suffle"
-msgstr "Suffle "
+msgstr "Aléatoire"
 
 #: ../inc/catchbase-default-options.php:413
 msgid "Default(Older Posts/Newer Posts)"
@@ -767,7 +767,7 @@ msgstr "Google+ "
 
 #: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:19
 msgid "Options for Featured Content"
-msgstr "Option pour contenu vedette"
+msgstr "Options pour contenu vedette"
 
 #: ../inc/customizer-includes/catchbase-customizer-featured-content-setting.php:21
 msgid "Featured Content Options"
@@ -874,7 +874,7 @@ msgstr ""
 
 #: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:125
 msgid "Image Loader"
-msgstr ""
+msgstr "Image de chargement"
 
 #: ../inc/customizer-includes/catchbase-customizer-featured-slider.php:135
 msgid "Featured Slider Type"
@@ -905,11 +905,11 @@ msgstr "Page / article taille image d'en tête"
 
 #: ../inc/customizer-includes/catchbase-customizer-header-options.php:65
 msgid "Featured Header Image Alt/Title Tag "
-msgstr " Image d'en tête Alt / Titre balise␣ "
+msgstr "Image d'en tête Alt / Titre balise"
 
 #: ../inc/customizer-includes/catchbase-customizer-header-options.php:78
 msgid "Featured Header Image Link URL"
-msgstr " Image d'en tête lien URL "
+msgstr "Image d'en tête lien URL"
 
 #: ../inc/customizer-includes/catchbase-customizer-header-options.php:91
 #: ../inc/customizer-includes/catchbase-customizer-theme-options.php:420

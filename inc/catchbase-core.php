@@ -1432,7 +1432,7 @@ add_action( 'catchbase_before_content', 'catchbase_promotion_headline', 30 );
  * @since Catch Base 1.0
  */
 function catchbase_top() {
-	catchbase_flush_transients();
+	//catchbase_flush_transients();
 	if ( ( !$catchbase_top = get_transient( 'catchbase_top' ) ) ) {
 		echo '<!-- refreshing cache -->';
 		
@@ -1447,7 +1447,7 @@ function catchbase_top() {
                     </div><!-- .wrapper -->
                 </div><!-- #site-login -->';
 		
-    	//set_transient( 'catchbase_top', $catchbase_top, 86940 );
+    	set_transient( 'catchbase_top', $catchbase_top, 86940 );
     }
 
     echo $catchbase_top;
